@@ -50,3 +50,23 @@ sudo nano audio-reactive-led-strip/python/config.py
 ```bash
 sudo python3 audio-reactive-led-strip/python/visualization.py
 ```
+
+8) error may occur while import pyaudio
+```python
+>>> import pyaudio
+Could not import the PyAudio C module '_portaudio'.
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/local/lib/python3.7/dist-packages/pyaudio.py", line 116, in <module>
+    import _portaudio as pa
+ImportError: libportaudio.so.2: cannot open shared object file: No such file or directory
+```
+to solve this, need to remove the existing pyaudio package, then manually complie the newest version
+```bash
+sudo pip3 uninstall pyaudio
+wget http://files.portaudio.com/archives/pa_stable_v190700_20210406.tgz
+tar -xvzf pa_stable_v190700_20210406.tgz
+./configure
+make
+make install
+```
