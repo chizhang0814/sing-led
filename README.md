@@ -3,7 +3,7 @@
 1) Install the driver of led stripe,
 ```bash
 sudo nano /boot/config.txt
-添加/修改下面两行
+#添加/修改下面两行
 hdmi_force_hotplug=1
 hdmi_force_edid_audio=1 
 ```
