@@ -12,7 +12,7 @@ Configure the port in file
 ```bash
 rpi_ws281x/python/examples/strandtest.py 
 ```
-2) Test the led driver by 
+2) Test the led driver by, remember user `-c` otherwise the led will keep on even you quit the test
 ```bash
 sudo python rpi_ws281x/python/examples/strandtest.py  -c
 ```
