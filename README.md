@@ -29,7 +29,7 @@ sudo apt-get install libatlas-base-dev
 ```bash
 sudo pip3 install numpy
 sudo pip3 install scipy
-sudo pip3 install pyaudio
+sudo apt install python3-pyaudio
 ```
 5) Copy `neopixel.py` from `rpi_ws281x/python/` to `audio-reactive-led-strip/python/`
 ```bash
